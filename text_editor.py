@@ -248,7 +248,7 @@ class TextEditor:
         msg = ''' 
         Do you have questions or concerns?
         Feel free to send an email to 
-        adammshively89@gmail.com.
+        ______________@gmail.com.
         Check out my github at 
         https://github.com/AdamShively
         '''
