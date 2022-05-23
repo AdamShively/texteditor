@@ -12,15 +12,15 @@ import clipboard
 class TextEditor:
 
     #Initialization function
-    def __init__(self, curr_font, curr_font_size, bold, italic, under, strike, wrapped):
+    def __init__(self):
         self.file = None
-        self.curr_font = curr_font
-        self.curr_font_size = curr_font_size
-        self.bold = bold
-        self.italic = italic
-        self.under = under
-        self.strike = strike
-        self.wrapped = wrapped
+        self.curr_font = 'System'
+        self.curr_font_size = 6
+        self.bold = 'normal'
+        self.italic = 'roman'
+        self.under = 0
+        self.strike = 0
+        self.wrapped = True
         self.window = TextEditor.create_window()
         
     def create_window(theme=None):
@@ -307,5 +307,5 @@ class TextEditor:
         self.window.close()
 
 if __name__ == "__main__":
-    te = TextEditor('System', 6, 'normal', 'roman', 0, 0, True)
+    te = TextEditor()
     te.main()
