@@ -174,19 +174,19 @@ class TextEditor:
                 
             if font_event in ('OK',):
 
-                if font_values['-BOL-'] == True:
+                if font_values['-BOL-']:
                     self.bold = 'bold'
                 else:
                     self.bold = 'normal'
-                if font_values['-ITA-'] == True:
+                if font_values['-ITA-']:
                     self.italic = 'italic'
                 else:
                     self.italic = 'roman'
-                if font_values['-UND-'] == True:
+                if font_values['-UND-']:
                     self.under = 1
                 else:
                     self.under = 0
-                if font_values['-STK-'] == True:
+                if font_values['-STK-']:
                     self.strike = 1
                 else:
                     self.strike = 0
